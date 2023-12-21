@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap");
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  position: relative;
+  /* background-color: #5454c5; */
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+h1 {
+  text-align: left;
+  color: #d6edff;
+  font-size: 3em;
+  font-family: "Inconsolata", monospace;
+}
+
+.todo-input {
+  background: transparent;
+  border: none;
+  border-bottom: 0.1em solid white;
+  border-radius: 0;
+  color: #d6edff;
+}
+.back,
+.add-btn {
+  background-color: #ea3788;
+  color: #ffffff;
+  /* border: 2px solid #d6edff; */
+  border: none;
+  padding: 0.5em 1em;
+  height: 70%;
+  border-radius: 1em;
+  text-align: left;
+  font-size: 1.1em;
+}
+.back:hover,
+.add-btn:hover {
+  background-color: #ffffff;
+  color: #ea3788;
+}
+.todo-input {
+  width: 50%;
+  padding: 0.5em;
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+/* .add-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.3em;
+  color: #ffffff;
+  padding: 1em;
+} */
+.todo-input::focus {
+  border: none;
+}
+.todo-input::placeholder {
+  color: #ffffff;
+}
+.TaskShow {
+  padding: 1em 2em;
+  margin: 2em;
+  font-size: 1.5em;
+
+  background-color: #d6edff;
+  color: #ea3788;
+  /* border: 2px solid #d6edff; */
+  border: none;
+  border-radius: 1em;
+  text-align: left;
+  font-size: 1.1em;
+}
+.sucess-alert {
+  position: relative;
+  padding: 0.5rem 0.5rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+  width: 50%;
+}
+@media (max-width: 600px) {
+  .back,
+  .add-btn {
+    padding: 0.5em 0.8em;
+    height: 70%;
+    border-radius: 1em;
+    text-align: left;
+    font-size: 1em;
+  }
+  .Work-function {
+    margin-top: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .todo-input {
+    width: 80%;
+  }
+  .TaskShow {
+    font-size: 1.2em;
+  }
+  .sucess-alert {
+    width: 80%;
+  }
+}
